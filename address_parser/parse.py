@@ -4,7 +4,14 @@ from . import utils
 dataset = pd.read_csv('address_parser/all_india_pin_code.csv', encoding='iso-8859-1')
 
 def find_pincode(text):
-	"""Best match for pincode"""
+	"""Best match for pincode
+	
+		Args:
+			text (str): 
+
+		Returns:
+			return (int): 
+	"""
 	pincode = None
 	text = text.split(" ")
 	for idx in range(len(text)-1, 0, -1):
@@ -19,7 +26,15 @@ def find_pincode(text):
 	return pincode
 
 def find(text, candidates):
-	"""Find entities based on similarity"""
+	"""Find entities based on similarity
+	
+		Args:
+			text (str):
+			candidates (str/list):
+			
+		Returns:
+			value (str):
+	"""
 
 	result = utils.token_similarity(text, candidates)
 	if result:
@@ -30,6 +45,12 @@ def find(text, candidates):
 def extract(text_blob):
 	"""Extract individual address entities (zipcode, city, etc)
 		from a blob of text
+
+		Args:
+			text_blob (str):
+
+		Returns:
+			entities (dict): 
 	"""
 	entities = {
 				"Building/Apartment": None,
