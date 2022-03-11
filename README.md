@@ -27,23 +27,23 @@ result = extract(text)
 print(result)
 ```
 
-
+<br><br>
 For owner only:
 
 TODO:
 
-[ ] Tests for presently extracted datapoints
-  [ ] assert type(zipcode) == int
-  [ ] if entity present by not capture, assert type(entity) == " "
-  [ ] if entity not present, assert type(entity) == None
+- [ ] Tests for presently extracted datapoints
+  - [ ] assert type(zipcode) == int
+  - [ ] if entity present by not capture, assert type(entity) == " "
+  - [ ] if entity not present, assert type(entity) == None
 
-[ ] Extract other datapoints
-  [ ] house/flat number
-  [ ] town
-  [ ] landmark
+- [ ] Extract other datapoints
+  - [ ] house/flat number
+  - [ ] town
+  - [ ] landmark
   
-[ ] Auto-fill address based on few datapoints
+- [ ] Auto-fill address based on few datapoints
 
-[ ] Unstructured address extraction
+- [ ] Unstructured address extraction
 
-[ ] Detect and reformat address in textblob from OCR outputs
+- [ ] Detect and reformat address in textblob from OCR outputs
