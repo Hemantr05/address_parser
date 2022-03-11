@@ -26,3 +26,24 @@ text = "#101, Whispering Meadows, Dollars Colony, RMV 2nd Stage, Bangalore-56009
 result = extract(text)
 print(result)
 ```
+
+
+For owner only:
+
+TODO:
+
+[ ] Tests for presently extracted datapoints
+  [ ] assert type(zipcode) == int
+  [ ] if entity present by not capture, assert type(entity) == " "
+  [ ] if entity not present, assert type(entity) == None
+
+[ ] Extract other datapoints
+  [ ] house/flat number
+  [ ] town
+  [ ] landmark
+  
+[ ] Auto-fill address based on few datapoints
+
+[ ] Unstructured address extraction
+
+[ ] Detect and reformat address in textblob from OCR outputs
