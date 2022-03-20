@@ -51,3 +51,12 @@ TODO:
   - [ ] Train a Model to learn address representation (LayoutLMv2 or BERT or a Visual Language Model - ViT)  
 
 - [ ] Detect and reformat address in textblob from OCR outputs
+
+
+- [ ] Develop API (using FastAPI)
+  - [ ] Dockerfile
+  - [ ] Type of input 
+   - [ ] Text
+   - [ ] Images (document or poster)
+  - [ ] Output response
+  - [ ] Auth Tokens (for each user) 
