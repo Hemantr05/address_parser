@@ -56,7 +56,7 @@ TODO:
 - [ ] Develop API (using FastAPI)
   - [ ] Dockerfile
   - [ ] Type of input 
-   - [ ] Text
-   - [ ] Images (document or poster)
+    - [ ] Text
+    - [ ] Images (document or poster)
   - [ ] Output response
   - [ ] Auth Tokens (for each user) 
