@@ -45,5 +45,9 @@ TODO:
 - [ ] Auto-fill address based on few datapoints
 
 - [ ] Unstructured address extraction
+  - [ ] Collect documents containing Indian addresses
+  - [ ] Convert them into images and collect OCR for them
+  - [ ] Annotate addresses in the image, with corresponding text
+  - [ ] Train a Model to learn address representation (LayoutLMv2 or BERT or a Visual Language Model - ViT)  
 
 - [ ] Detect and reformat address in textblob from OCR outputs
