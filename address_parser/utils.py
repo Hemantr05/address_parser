@@ -1,4 +1,5 @@
 import re
+import cv2
 import pandas as pd
 from rapidfuzz import process, fuzz
 
@@ -52,6 +53,10 @@ def list2str(source):
 	"""
 	target = ' '.join(map(str, source))
 	return target
+
+def load_image(image_path):
+	image = cv2.imread(image_path)
+	return image
 
 # def search_entity(source_entity, target_entity, dataset_path):
 # 	"""Search entity from custom dataset
