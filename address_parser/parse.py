@@ -43,7 +43,7 @@ def find(text, candidates):
 	return None
 	
 def extract_from_image(image):
-	image = load_image(image)
+	image = utils.load_image(image)
 	
 	# TODO: 
 	# 1. Extract text from image using OCR (perhaps, tesseract)
