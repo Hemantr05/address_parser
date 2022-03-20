@@ -42,6 +42,16 @@ def find(text, candidates):
 		return value.capitalize()
 	return None
 	
+def extract_from_image(image):
+	image = load_image(image)
+	
+	# TODO: 
+	# 1. Extract text from image using OCR (perhaps, tesseract)
+	# 2. Group them by line or paragraph blocks
+	# 	2.1. Check for bounding box consistency
+	# 	2.2. If too much white space between y coordinates of words, new paragraph
+	# 	Note: Refer to glib's approach for Block extraction
+
 def extract(text_blob):
 	"""Extract individual address entities (zipcode, city, etc)
 		from a blob of text
